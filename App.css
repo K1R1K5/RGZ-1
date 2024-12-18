@@ -1,0 +1,56 @@
+/* Основной контейнер */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212;
+}
+.app-background {
+  background-image: url('./assets/background.png'); /* Укажите правильный путь */
+  background-size: cover; /* Заполнить весь экран */
+  background-position: center; /* Центрировать изображение */
+  background-repeat: no-repeat; /* Убрать повторение */
+  min-height: 100vh; /* Минимальная высота страницы */
+  display: flex;
+  flex-direction: column;
+}
+/* Верхняя панель */
+.header {
+  display: flex;
+  justify-content: space-between; /* Одна часть для навигации, другая для профиля */
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* Секция навигации */
+.navigation-buttons {
+  display: flex;
+  gap: 10px; /* Расстояние между кнопками */
+}
+
+/* Секция профиля (аватар и кнопка выхода) */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Расстояние между аватаром и кнопкой */
+}
+
+/* Основной контент */
+.content {
+  flex: 1; /* Контент занимает всё доступное пространство */
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Кнопки навигации */
+.navigation-buttons a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
